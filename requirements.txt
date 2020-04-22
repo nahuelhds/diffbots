@@ -3,7 +3,7 @@ bleach==3.1.4
 certifi==2020.4.5.1
 chardet==3.0.4
 cssselect==1.1.0
--e git://github.com/nahuelhds/diffengine.git@80162b75355656eb2363818c9f5c2307ed0c2506#egg=diffengine
+-e git://github.com/nahuelhds/diffengine.git@6336bbf980a7cd3cf423f2436fba80b58a4805c3#egg=diffengine
 feedparser==5.2.1
 Genshi==0.7.3
 html5lib==1.0.1

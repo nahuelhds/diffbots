@@ -1,0 +1,7 @@
+.idea
+diffs
+src
+venv
+.env
+*.log
+*.db
