@@ -1,7 +1,9 @@
 .idea
 diffs
+query
 src
 venv
 .env
+.dump
 *.log
 *.db
