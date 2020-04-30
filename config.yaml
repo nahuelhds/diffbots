@@ -24,11 +24,11 @@ feeds:
       access_token: "${ACCESS_TOKEN_EL_PAIS}"
       access_token_secret: "${ACCESS_TOKEN_SECRET_EL_PAIS}"
     url: https://www.elpais.com.uy/rss/
-  - name: Montevideo Portal
-    twitter:
-      access_token: "${ACCESS_TOKEN_MONTEVIDEO_PORTAL}"
-      access_token_secret: "${ACCESS_TOKEN_SECRET_MONTEVIDEO_PORTAL}"
-    url: https://www.montevideo.com.uy/anxml.aspx?58
+#  - name: Montevideo Portal
+#    twitter:
+#      access_token: "${ACCESS_TOKEN_MONTEVIDEO_PORTAL}"
+#      access_token_secret: "${ACCESS_TOKEN_SECRET_MONTEVIDEO_PORTAL}"
+#    url: https://www.montevideo.com.uy/anxml.aspx?58
   - name: Brecha
     twitter:
       access_token: "${ACCESS_TOKEN_BRECHA}"
