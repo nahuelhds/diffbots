@@ -4,6 +4,6 @@ query
 src
 venv
 .env
-.dump
+*.dump
 *.log
 *.db
