@@ -1,36 +1,45 @@
-verbose: false
+db: ${DATABASE_URL}
+feeds:
+  - name: la diaria
+    url: https://ladiaria.com.uy/feeds/articulos/
+    twitter:
+      access_token: ${ACCESS_TOKEN_LA_DIARIA}
+      access_token_secret: ${ACCESS_TOKEN_SECRET_LA_DIARIA}
+  - name: El Observador
+    twitter:
+      access_token: ${ACCESS_TOKEN_EL_OBSERVADOR}
+      access_token_secret: ${ACCESS_TOKEN_SECRET_EL_OBSERVADOR}
+    url: https://www.elobservador.com.uy/rss/elobservador.xml
+  - name: "El Pa\xEDs UY"
+    twitter:
+      access_token: ${ACCESS_TOKEN_EL_PAIS}
+      access_token_secret: ${ACCESS_TOKEN_SECRET_EL_PAIS}
+    url: https://www.elpais.com.uy/rss/
+  - name: Brecha
+    twitter:
+      access_token: ${ACCESS_TOKEN_BRECHA}
+      access_token_secret: ${ACCESS_TOKEN_SECRET_BRECHA}
+    url: http://brecha.com.uy/feed/
+  - name: Montevideo Portal
+    twitter:
+      access_token: ${ACCESS_TOKEN_MONTEVIDEO_PORTAL}
+      access_token_secret: ${ACCESS_TOKEN_SECRET_MONTEVIDEO_PORTAL}
+    url: https://www.montevideo.com.uy/anxml.aspx?58
 lang:
   and: y
   change_in: Cambio en
   the_summary: la bajada
   the_title: "el t\xEDtulo"
   the_url: la URL
+logger:
+  file: False
+  console: True
+time_sleep: 0
 twitter:
-  consumer_key: "${CONSUMER_KEY}"
-  consumer_secret: "${CONSUMER_SECRET}"
-feeds:
-  - name: la diaria
-    url: https://ladiaria.com.uy/feeds/articulos/
-    twitter:
-      access_token: "${ACCESS_TOKEN_LA_DIARIA}"
-      access_token_secret: "${ACCESS_TOKEN_SECRET_LA_DIARIA}"
-  - name: El Observador
-    twitter:
-      access_token: "${ACCESS_TOKEN_EL_OBSERVADOR}"
-      access_token_secret: "${ACCESS_TOKEN_SECRET_EL_OBSERVADOR}"
-    url: https://www.elobservador.com.uy/rss/elobservador.xml
-  - name: "El Pa\xEDs UY"
-    twitter:
-      access_token: "${ACCESS_TOKEN_EL_PAIS}"
-      access_token_secret: "${ACCESS_TOKEN_SECRET_EL_PAIS}"
-    url: https://www.elpais.com.uy/rss/
-#  - name: Montevideo Portal
-#    twitter:
-#      access_token: "${ACCESS_TOKEN_MONTEVIDEO_PORTAL}"
-#      access_token_secret: "${ACCESS_TOKEN_SECRET_MONTEVIDEO_PORTAL}"
-#    url: https://www.montevideo.com.uy/anxml.aspx?58
-  - name: Brecha
-    twitter:
-      access_token: "${ACCESS_TOKEN_BRECHA}"
-      access_token_secret: "${ACCESS_TOKEN_SECRET_BRECHA}"
-    url: http://brecha.com.uy/feed/
+  consumer_key: ${CONSUMER_KEY}
+  consumer_secret: ${CONSUMER_SECRET}
+verbose: false
+webdriver:
+  engine: chromedriver
+  executable_path: ${CHROMEDRIVER_PATH}
+  binary_location: ${GOOGLE_CHROME_BIN}

@@ -7,4 +7,5 @@ venv
 *.dump*
 *.log
 *.db
+*.ignore.*
 DB.md
