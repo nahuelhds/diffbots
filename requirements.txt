@@ -1,1 +1,1 @@
--e git://github.com/nahuelhds/diffengine.git@37dda379f80bf4ae228668f1ce27925ab0a3e901#egg=diffengine
+-e git://github.com/nahuelhds/diffengine.git@39f2b391869be38e32fb254d54a70d67106b8f6f#egg=diffengine
