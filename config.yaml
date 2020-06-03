@@ -1,7 +1,7 @@
 db: ${DATABASE_URL}
 feeds:
   - name: la diaria
-    skip_pattern: "accede a \\d+ articulos por mes con la suscripcion gratuita"
+    skip_pattern: "accede a \\d+ articulos gratis por mes con la suscripcion gratuita"
     url: https://ladiaria.com.uy/feeds/articulos/
     twitter:
       access_token: ${ACCESS_TOKEN_LA_DIARIA}
