@@ -1,13 +1,6 @@
-## Database commands
+# Diffbots
 
-```bash
-# Capture and download
-heroku pg:backups:capture
-heroku pg:backups:download
+This is an implementation of [diffengine for Heroku.](https://github.com/nahuelhds/diffengine)
 
-# Restore
-pg_restore --verbose --clean --no-acl --no-owner -h localhost -U [USER] -d diffengine [DUMP_FILE]
-
-# Reset online
-heroku pg:reset DATABASE --confirm [APP_NAME]
-```
+The important part here is to check the [config file.](./config.yaml) 
+For a better understading about its configuration, [check the main project readme.](https://github.com/DocNow/diffengine/blob/master/README.md)
